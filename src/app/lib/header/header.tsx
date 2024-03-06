@@ -1,6 +1,6 @@
 import styles from "./header.module.css";
-import { NavBarLinkProps } from "../navBar/navBarLink";
-import { NavBarRoot } from "../navBar/navBarRoot";
+import { NavBarLinkProps } from "./navBar/navBarLink";
+import { NavBarRoot } from "./navBar/navBarRoot";
 
 const NAVBAR_DATA: NavBarLinkProps[] = [
   {
