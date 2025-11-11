@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.10",
+    "@fontsource/comfortaa": "^5.2.8",
     "astro": "^5.15.4"
   }
 }
