@@ -2,7 +2,27 @@
 //@ts-ignore
 import "@fontsource-variable/open-sans";
 import Header from "../components/header/Header.astro";
-import comfortaa from "@fontsource/comfortaa/files/comfortaa-latin-300-normal.woff2?url";
+
+const comfortaa300 = new URL(
+  "@fontsource/comfortaa/files/comfortaa-latin-300-normal.woff2",
+  import.meta.url
+).pathname;
+const comfortaa400 = new URL(
+  "@fontsource/comfortaa/files/comfortaa-latin-400-normal.woff2",
+  import.meta.url
+).pathname;
+const comfortaa500 = new URL(
+  "@fontsource/comfortaa/files/comfortaa-latin-500-normal.woff2",
+  import.meta.url
+).pathname;
+const comfortaa600 = new URL(
+  "@fontsource/comfortaa/files/comfortaa-latin-600-normal.woff2",
+  import.meta.url
+).pathname;
+const comfortaa700 = new URL(
+  "@fontsource/comfortaa/files/comfortaa-latin-700-normal.woff2",
+  import.meta.url
+).pathname;
 ---
 
 <!doctype html>
@@ -14,8 +34,36 @@ import comfortaa from "@fontsource/comfortaa/files/comfortaa-latin-300-normal.wo
     <link
       rel="preload"
       as="font"
-      type="font/comfortaa"
-      href={comfortaa}
+      type="font/woff2"
+      href={comfortaa300}
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={comfortaa400}
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={comfortaa500}
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={comfortaa600}
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={comfortaa700}
       crossorigin
     />
     <meta name="generator" content={Astro.generator} />
