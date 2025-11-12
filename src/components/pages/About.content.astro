@@ -1,1 +1,166 @@
-<div>About me!</div>
+<div class="about-container">
+  <div class="about-content">
+    <div class="image-container">
+      <img class="about-image-one" src="/src/assets/headshot.png" />
+    </div>
+
+    <div>
+      <h2>Clifford Richardson</h2>
+      <br />
+      <p>
+        <b>C</b>LIFFORD RICHARDSON, violinist, began violin studies at age 7 at
+        the Nevada School of the Arts in Las Vegas. Later, he was under the
+        tutelage of Shakeh Ghoukasian, Principal Second Violinist of the Las
+        Vegas Philharmonic, for several years. He has also had masterclasses
+        with renowned violin pedagogues such as Alexander Treger, former LA
+        Philharmonic concertmaster and Cyrus Furough, Professor of Violin at
+        Carnegie Mellon University both of whom were students of David Oistrakh,
+        among others.
+      </p>
+      <br />
+      <p>
+        <b>A</b>s an in-demand musician, his career covers a broad spectrum of
+        music which includes solo, chamber, musicals, and orchestral
+        performances. A concerto competition winner with the Henderson Symphony,
+        he was featured as a soloist and performed the <i
+          >Bruch Violin Concerto 1, 1st Mvmt</i
+        > for the symphony's annual Youth Concert Series in 2015. During this time,
+        he also performed as a chamber musician for the UNLV Chamber Choir's performance
+        of Henry Purcell's
+        <i>Ode for Queen Mary's Birthday</i>. Still a developing orchestral
+        musician, he won the coveted privlege of performing as co-concertmaster
+        of the Nevada All-State Orchestra, an audition-only orchestra which
+        selects the best music students from across the state despite being
+        last-chair several years earlier. Clifford also won first prizes at both
+        the Silver State and Bolognini Competitions for solo performance.
+        Outside of the classical avenues, he performed at the Academy of Country
+        Music Awards in 2012 and 2016, sharing the stage with artists such as
+        Little Big Town and Tim McGraw.
+      </p>
+      <br />
+      <p>
+        <b>I</b>n 2024, after a several-year break from music, Clifford returned
+        to the performaning arts world with meteoric success. Upon a generous
+        referral to the Tahoe Symphony Orchestra and Chorus (TOCCATA) from his
+        stand partner in the Carson City Symphony, Lee, he was immediately
+        placed as concertmaster for their well-attended 4th of July concert
+        series, and as concertmaster for the sold-out Hot Opera Nights concert
+        featuring Reno Philhamonic musicians after only 5 months since his
+        return to music. From there, he joined as a founding member of the Tahoe
+        Philharmonic Orchestra under the direction of Maestro James Rawie as
+        concertmaster, performing works such as J. S. Bach's <i
+          >St Matthew Passion</i
+        >, Mozart's <i>Requiem</i>, Handel's <i>Messiah</i>, and others. On top
+        of orchestral work, he joined as a violinist at St. Luke's Lutheran
+        Church, performing as a volunteer for its modern worship service.
+      </p>
+      <br />
+      <p>
+        <b>R</b>ecognized for his musical talent, Clifford was also recruited to
+        play with the locally-renowned <i>String Beings</i> with violinist Van Vinikow,
+        a former violinist of the Reno Philharmonic for over 40 years. With Van,
+        he has shared the exquisite gift of music with many couples as they got married,
+        with the elderly at senior-care homes, at wine-tastings, and most notably
+        at the 2025 production of Wetern Nevada Musical Theater Company's <i
+          >The Sound of Music</i
+        >, which sold out 5 of the 7 showings.
+      </p>
+      <br />
+      <p>
+        <b>D</b>uring his musical hiatus in college, Clifford enjoyed moderate
+        success in cybersecurity while pursuing a Bachelor's degree in Computer
+        Science & Engineering at the University of Nevada, Reno, such as placing
+        within the top 5 nationally multiple years in a row for the National
+        Cyber League Team Competition, and as well as top 100 for its individual
+        bracket. This venture in to cybersecurity earned him an internship at
+        Desert Research Institute under the personal guidance of Chief
+        Information Security Officer Brandon Peterson in 2018. Furthermore, in
+        2019, Clifford finished as a top 100 finalist out of a staggering 13,000
+        applicants in the national Cyber FastTrack competition, resulting in a
+        unique $25,000 scholarship to supplement his education with
+        cybersecurity knowledge.
+      </p>
+      <br />
+      <p>
+        <b>C</b>lifford currently plays on a c. 1930 Orfeo Carletti violin, and
+        previously played on a violin made by Jarek Koscielny.
+      </p>
+    </div>
+  </div>
+
+  <style>
+    h2 {
+      font-size: 2em;
+      font-weight: bold;
+
+      @media screen and (max-width: 876px) {
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+
+    p {
+      line-height: 1.5;
+      @media screen and (max-width: 876px) {
+        padding: 0 10px 0 10px;
+      }
+    }
+
+    i {
+      font-style: italic;
+    }
+
+    b {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      padding: 100px 20px 200px 20px;
+
+      @media screen and (max-width: 876px) {
+        padding: 100px 0 200px 0;
+      }
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: center;
+      max-width: 800px;
+
+      @media screen and (max-width: 876px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .about-image-one {
+      float: left;
+      margin-right: 50px;
+
+      @media screen and (max-width: 876px) {
+        margin: 0;
+      }
+    }
+
+    .about-image-two {
+      margin: 0 50px 0 50px;
+    }
+
+    img {
+      height: 300px;
+      border-radius: 20px;
+      :hover {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</div>

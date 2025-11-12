@@ -23,11 +23,16 @@ import comfortaa from "@fontsource/comfortaa/files/comfortaa-latin-300-normal.wo
   </head>
   <body>
     <Header />
-    <slot />
+    <div class="content-container">
+      <slot />
+    </div>
   </body>
 </html>
 
 <style>
+  .content-container {
+    padding: 50px 0px 0 0px;
+  }
   html,
   body {
     margin: 0;
