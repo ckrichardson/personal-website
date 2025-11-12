@@ -1,0 +1,38 @@
+<nav>
+  <div class="navbar-container">
+    <div class="nav-element"><a href="./">Home</a></div>
+    <div class="nav-element"><a href="./music">Music</a></div>
+    <div class="nav-element"><a href="./about">About</a></div>
+    <div class="nav-element"><a href="./contact">Contact</a></div>
+  </div>
+</nav>
+
+<style>
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+
+    @media screen and (max-width: 1050px) {
+      margin-right: 0px;
+      width: 500px;
+      justify-content: space-evenly;
+    }
+  }
+
+  .nav-element {
+    font-size: 1.2em;
+    margin-left: 50px;
+
+    @media screen and (max-width: 1050px) {
+      margin-top: 15px;
+      margin-left: 0px;
+    }
+  }
+
+  a {
+    :hover {
+      text-decoration: underline;
+    }
+  }
+</style>
