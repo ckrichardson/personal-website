@@ -2,11 +2,13 @@
 //@ts-ignore
 import "@fontsource-variable/open-sans";
 import Header from "../components/header/Header.astro";
-import comfortaa300 from "@fontsource/comfortaa/files/comfortaa-greek-300-normal.woff2";
-import comfortaa400 from "@fontsource/comfortaa/files/comfortaa-greek-400-normal.woff2";
-import comfortaa500 from "@fontsource/comfortaa/files/comfortaa-greek-500-normal.woff2";
-import comfortaa600 from "@fontsource/comfortaa/files/comfortaa-greek-600-normal.woff2";
-import comfortaa700 from "@fontsource/comfortaa/files/comfortaa-greek-700-normal.woff2";
+//@ts-ignore
+import openSansWoff2 from "@fontsource-variable/open-sans/files/open-sans-latin-wght-normal.woff2?url";
+import comfortaa300 from "@fontsource/comfortaa/files/comfortaa-greek-300-normal.woff2?url";
+import comfortaa400 from "@fontsource/comfortaa/files/comfortaa-greek-400-normal.woff2?url";
+import comfortaa500 from "@fontsource/comfortaa/files/comfortaa-greek-500-normal.woff2?url";
+import comfortaa600 from "@fontsource/comfortaa/files/comfortaa-greek-600-normal.woff2?url";
+import comfortaa700 from "@fontsource/comfortaa/files/comfortaa-greek-700-normal.woff2?url";
 ---
 
 <!doctype html>
@@ -48,6 +50,13 @@ import comfortaa700 from "@fontsource/comfortaa/files/comfortaa-greek-700-normal
       as="font"
       type="font/woff2"
       href={comfortaa700}
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={openSansWoff2}
       crossorigin
     />
     <meta name="generator" content={Astro.generator} />
