@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:cf": "astro build && sed -i 's/href=\"/_astro/[^\"]*\\.css\"//g' dist/**/index.html && rm -rf dist/_astro/about*"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.10",
