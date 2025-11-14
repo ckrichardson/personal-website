@@ -1,5 +1,114 @@
-<div id="container">
-  <p>test content</p>
+---
+import BachSiegel from "../../assets/Bachsiegel.svg";
+---
+
+<div id="index-content-container">
+  <div class="panel-one">
+    <div class="blurb-image-container">
+      <div class="panel-one-image-container">
+        <img
+          class="panel-image-one"
+          src={BachSiegel.src}
+          width="267.5"
+          height="300"
+          fetchpriority="high"
+          alt="Bach Siegel"
+        />
+      </div>
+      <div class="blurb">
+        <p class="no-highlight">Reno</p>
+        <p class="no-highlight">Based</p>
+        <p class="no-highlight">Violinist</p>
+      </div>
+    </div>
+    <div class="button-container">
+      <a class="no-highlight" href="/about">LEARN MORE</a>
+    </div>
+  </div>
 </div>
 
-<style></style>
+<style>
+  p {
+    @media screen and (max-width: 800px) {
+      text-align: center;
+    }
+  }
+
+  a {
+    all: unset;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+
+  .button-container {
+    margin-top: 50px;
+  }
+
+  .no-highlight {
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+  }
+
+  .blurb-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family:
+      Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen,
+      serif;
+    font-size: 100px;
+    font-weight: bold;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      font-size: 75px;
+    }
+
+    @media screen and (max-width: 500px) {
+      justify-content: flex-start;
+    }
+  }
+
+  .panel-image-one {
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  .index-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blurb {
+    width: 100%
+    max-width: 420px;
+    margin-left: 50px;
+
+    @media screen and (max-width: 800px) {
+      margin: 0;
+    }
+  }
+
+  .panel-one {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .panel-one-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
