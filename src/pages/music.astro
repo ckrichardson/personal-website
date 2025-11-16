@@ -1,8 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import MusicContent from "../components/pages/Music.content.astro";
+
+export type upcomingPerformance = {
+  title: string;
+  description: string;
+  date: string;
+  time: string;
+  location: string;
+};
+
+const upcomingPerformances: upcomingPerformance[] = [
+  {
+    title: "Handel's Messiah",
+    description: "",
+    date: "12/7",
+    time: "3:00 p.m.",
+    location: "St. Gall Catholic Community",
+  },
+  {
+    title: "Handel's Messiah",
+    description: "",
+    date: "12/13",
+    time: "3:00 p.m.",
+    location: "St. Lukes Lutheran Church",
+  },
+  {
+    title: "Handel's Messiah",
+    description: "",
+    date: "12/14",
+    time: "4:00 p.m.",
+    location: "St. Rose of Lima Catholic Church",
+  },
+];
 ---
 
 <Layout>
-  <MusicContent />
+  <MusicContent upcomingPerformances={upcomingPerformances} />
 </Layout>

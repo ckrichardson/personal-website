@@ -1,1 +1,34 @@
-<div>Some fun things about music</div>
+---
+import { type upcomingPerformance } from "../../pages/music.astro";
+import UpcomingPerformance from "../upcomingPerformance/UpcomingPerformance.astro";
+
+interface Props {
+  upcomingPerformances: upcomingPerformance[];
+}
+
+const { upcomingPerformances } = Astro.props;
+---
+
+<div class="music-page-container">
+  <div class="upcoming-performances-container">
+    <h1>Upcoming Performances</h1>
+    {
+      upcomingPerformances.map((performance) => (
+        <UpcomingPerformance performance={performance} />
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .music-page-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 0 0;
+    padding-left: 100px;
+  }
+</style>
