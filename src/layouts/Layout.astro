@@ -2,6 +2,7 @@
 //@ts-ignore
 import "@fontsource-variable/open-sans";
 import Header from "../components/header/Header.astro";
+import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -11,6 +12,7 @@ import Header from "../components/header/Header.astro";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
+    <ClientRouter />
     <title>Clifford Richardson</title>
     <style is:inline>
       @font-face {
