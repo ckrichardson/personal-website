@@ -9,9 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.6.10",
+    "@astrojs/cloudflare": "^12.6.12",
     "@fontsource-variable/open-sans": "^5.2.7",
-    "astro": "^5.15.4"
+    "astro": "^5.16.4"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
